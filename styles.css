@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+
+}
+.main-container{
+     
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 70% 20%;
+    grid-template-areas: 
+    "upsstreet-container upsstreet-container upsstreet-container"
+    "left-container center-container rightstreet-container"
+    "left-container downsstreet-container rightstreet-container";
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.upsstreet-container{
+    grid-area: upsstreet-container;
+    background-color: red;
+}
+.left-container{
+    grid-area: left-container;
+    background-color: rgb(199, 141, 17);
+}
+.center-container{
+    grid-area: center-container;
+    background-color: green;
+}
+.rightstreet-container{
+    grid-area: rightstreet-container;
+    background-color: rgb(56, 154, 247);
+
+}
+.downsstreet-container{
+    grid-area: downsstreet-container;
+    background-color: blue
+
+}
